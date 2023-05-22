@@ -6,6 +6,7 @@ import ReactFlow, {
   useNodesState,
   useEdgesState,
   Controls,
+  Background,
 } from 'reactflow';
 import 'reactflow/dist/base.css';
 import SideBarPanel from './Components/sidebar/SideBarPanel';
@@ -107,6 +108,21 @@ export default function FlowBuilder() {
         <Grid container justify='space-between'>
           <Grid xs={12} sm={12} md={10} sx={{}}>
             <div ref={reactFlowWrapper} style={{ height: '1000px' }}>
+              {nodes.length === 0 && (
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    marginTop: '10px',
+                  }}
+                >
+                  <p style={{ fontSize: '14px' }}>
+                    Drag and Drop new node from side panel{' '}
+                  </p>{' '}
+                </div>
+              )}
+
               <ReactFlow
                 nodes={nodes}
                 edges={edges}
@@ -121,6 +137,7 @@ export default function FlowBuilder() {
                 onNodeClick={(node) => {}}
               >
                 <Controls />
+                <Background />
               </ReactFlow>
             </div>
           </Grid>
