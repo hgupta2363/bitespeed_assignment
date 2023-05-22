@@ -1,0 +1,39 @@
+.container{
+  
+    width:21rem;
+    height: 7.5rem;
+    border-radius: 1rem;
+
+  box-shadow: 1px 1px 30px #ccc;
+
+}
+.messege_header{
+  display: flex;
+
+  justify-content: space-between;
+  background-color:#b3f0e2;
+  padding-left: 1.2rem;
+  border-radius: 0.5rem;
+
+  align-items: baseline;
+  
+  
+  
+}
+.messege_content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+
+    
+
+}
+.messege_text{
+    font-weight: 700;
+
+
+    display: block;
+    margin-bottom: 1rem;
+
+}

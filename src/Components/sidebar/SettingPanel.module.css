@@ -1,0 +1,25 @@
+.header{
+    padding-left: 1rem;
+    display: flex;
+    gap:30px;
+    align-items: baseline;
+    border-bottom: solid 0.1rem rgb(207, 207, 207);
+}
+.heder_text{
+    font-size: 1.6em;
+    font-weight: 600; 
+}
+.messege_box{
+    padding:2rem 2rem 3rem 2rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: solid 0.1rem rgb(207, 207, 207);
+}
+.msg_input{
+   
+     display: block;
+    height:70px;
+    padding-left: 10px;
+    width:200px
+}

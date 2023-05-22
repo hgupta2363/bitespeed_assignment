@@ -1,0 +1,18 @@
+.conatiner{
+
+    padding:20px 0px 0px 20px
+}
+.messege_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 2px#7e8bd5;
+    width:180px;
+    padding-top: 15px;
+
+}
+.messege_text{
+    font-size: 1.4rem;
+    color:#7e8bd5
+}
